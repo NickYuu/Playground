@@ -18,12 +18,11 @@ dateString.components(separatedBy: "年").last
 date?.timeIntervalSinceNow
 Date().timeIntervalSinceNow
 
-78561/3600
 
 extension Date {
     func fom() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyy年MM月dd日"
+        formatter.dateFormat = "yyy年MM月dd日 HH:mm:ss"
         let rocCalendar = NSCalendar.init(identifier: NSCalendar.Identifier.republicOfChina)
         formatter.calendar = rocCalendar as Calendar!
         formatter.locale = Locale(identifier: "zh-TW")
@@ -31,4 +30,30 @@ extension Date {
     }
 }
 
-date?.fom()
+//date?.fom()
+
+
+extension String {
+    
+    func toDate() -> Date {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        formatter.locale = Locale(identifier: "zh-TW")
+        return formatter.date(from: self)!
+    }
+}
+
+print("2017/03/20 17:00:30".toDate())
+
+
+
+let aaa = Calendar.current.date(byAdding: .second, value: -30, to: Date())!
+
+aaa
+
+
+
+
+
+
+
