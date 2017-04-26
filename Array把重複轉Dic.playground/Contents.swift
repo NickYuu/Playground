@@ -12,6 +12,7 @@ import UIKit
  
  */
 
+/*
 extension Array where Element: Equatable, Element == String {
     func duplicatesToDic() -> [String:Int] {
         let arr = reduce([]){ $0.contains($1) ? $0 : $0 + [$1] }
@@ -19,9 +20,7 @@ extension Array where Element: Equatable, Element == String {
         arr.forEach { key in
             dic[key] = 0
             self.forEach {
-                if $0 == key {
-                    dic[key]! += 1
-                }
+                if $0 == key { dic[key]! += 1 }
             }
         }
         return dic
@@ -30,5 +29,34 @@ extension Array where Element: Equatable, Element == String {
 
 let arr = ["😡", "😻", "🚗", "😡", "🚗", "🚗", "😡", "😻"]
 print(arr.duplicatesToDic())
+*/
+
+
+
+
+/*
+let arr = ["😡", "😻", "🚗", "😡", "🚗", "🚗", "😡", "😻"]
+var dic = [String:Int]()
+for i in arr {
+    dic[i] = (dic[i] == nil ? 1 : dic[i]! + 1)
+}
+print(dic)
+*/
+
+/**/
+
+extension Array where Element == String {
+    func duplicatesToDic() -> [String:Int] {
+        var dic = [String:Int]()
+        forEach {
+            dic[$0] = (dic[$0] ?? 0) + 1
+        }
+        return dic
+    }
+}
+
+let arr = ["😡", "😻", "🚗", "😡", "🚗", "🚗", "😡", "😻"]
+print(arr.duplicatesToDic())
+
 
 
