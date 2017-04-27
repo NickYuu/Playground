@@ -14,3 +14,5 @@ extension String {
 }
 
 str.removeLast()
+
+str.deletingLastPathComponent
