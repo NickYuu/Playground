@@ -25,4 +25,17 @@ a.replacingOccurrences(of: " ", with: "")
 
 let utfStr = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=25.039328,121.5766562&language=zh-TW&rankby=distance&keyword=咖啡".addingPercentEncoding(withAllowedCharacters:CharacterSet.urlQueryAllowed)!
 
-print(utfStr + "&key=AIzaSyD6crA7UUfb94yJlAmbjgbS1lRI4l4wTSU")
+//print(utfStr + "&key=AIzaSyD6crA7UUfb94yJlAmbjgbS1lRI4l4wTSU")
+
+
+
+let ss = "咖啡".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
+print(ss!)
+
+"%E5%92%96%E5%95%A1"
+
+
+
+
+
