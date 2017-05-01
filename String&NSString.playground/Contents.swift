@@ -29,11 +29,11 @@ let utfStr = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?locat
 
 
 
-let ss = "咖啡".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+let ss = "http://sandbox.api.simsimi.com/request.p?key=7fc6a39d-5bdd-4e2d-9435-c7d52ab7dd54&lc=zh&text=誒誒".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
 
 print(ss!)
 
-"%E5%92%96%E5%95%A1"
+"%E8%AA%92%E8%AA%92"
 
 
 
