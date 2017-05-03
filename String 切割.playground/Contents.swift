@@ -17,3 +17,7 @@ if latitude.characters.count > 8 {
 }
 
 latitude
+
+
+let aa = "adsf,sdf,asdf,aasd"
+aa.components(separatedBy: ",")
