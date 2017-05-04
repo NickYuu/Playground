@@ -20,4 +20,21 @@ latitude
 
 
 let aa = "adsf,sdf,asdf,aasd"
-aa.components(separatedBy: ",")
+let arr = aa.components(separatedBy: ",")
+
+var sstr = ""
+for (i,s) in arr.enumerated() {
+    if i != 0 {
+        sstr += "."
+    }
+    sstr += s
+}
+
+print(sstr)
+
+for _ in 0...15 {
+    print(arc4random() % 3)
+}
+
+
+"=asdfa".components(separatedBy: "=")

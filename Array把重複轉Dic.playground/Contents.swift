@@ -43,7 +43,7 @@ for i in arr {
 print(dic)
 */
 
-/**/
+/*
 
 extension Array where Element == String {
     func duplicatesToDic() -> [String:Int] {
@@ -57,6 +57,27 @@ extension Array where Element == String {
 
 let arr = ["😡", "😻", "🚗", "😡", "🚗", "🚗", "😡", "😻"]
 print(arr.duplicatesToDic())
+*/
+
+
+let arra:[String] = ["3", "1"]
+
+
+
+
+
+for _ in 0...20 {
+    print(arra[Int(arc4random())%arra.count])
+}
+
+
+
+
+
+
+
+
+
 
 
 
