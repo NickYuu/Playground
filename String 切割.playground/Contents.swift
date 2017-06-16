@@ -38,3 +38,8 @@ for _ in 0...15 {
 
 
 "=asdfa".components(separatedBy: "=")
+
+
+"asdf|sdf|a|".components(separatedBy: "|")
+
+
